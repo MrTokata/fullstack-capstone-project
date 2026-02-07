@@ -13,9 +13,9 @@ const port = 3060;
 
 // Connect to MongoDB; we just do this one time
 connectToDatabase().then(() => {
-    pinoLogger.info('Connected to DB'); // Add semicolon here
+    pinoLogger.info('Connected to DB');
 })
-    .catch((e) => { // Add semicolon here
+    .catch((e) => {
         console.error('Failed to connect to DB', e);
     });
 
