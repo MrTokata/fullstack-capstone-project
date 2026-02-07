@@ -1,8 +1,7 @@
 {
-  "esversion": 8,  // Enable ES8 features (async/await)
-  "esnext": true,  // Allow ES6+ features such as arrow functions, template literals, etc.
+  "esversion": 8,  // Enable ES8 features like async/await
   "node": true,    // Configure for Node.js environment
   "browser": true, // If you're working with browser code as well
-  "asi": true,     // Allow automatic semicolon insertion (optional, but helps with missing semicolons)
+  "asi": true,     // Allow automatic semicolon insertion (optional)
   "undef": true    // Warn about undefined variables
 }
