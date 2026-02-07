@@ -1,4 +1,3 @@
-// db.js
 require('dotenv').config();
 const MongoClient = require('mongodb').MongoClient;
 
@@ -9,11 +8,11 @@ let dbInstance = null;
 const dbName = "giftdb";
 
 async function connectToDatabase() {
-    if (dbInstance){
-        return dbInstance
-    };
+    if (dbInstance) {
+        return dbInstance;
+    }
 
-    const client = new MongoClient(url);      
+    const client = new MongoClient(url);
 
     // Task 1: Connect to MongoDB
     await client.connect();
@@ -22,10 +21,10 @@ async function connectToDatabase() {
     dbInstance = client.db(dbName);
 
     // Task 3: Return database instance
-    console.log("successfully connected to database.")
-    return dbInstance
+    console.log("successfully connected to database.");
+    return dbInstance;
 }
 
-connectToDatabase()
+connectToDatabase();
 
 module.exports = connectToDatabase;
